@@ -1,0 +1,141 @@
+@media only screen and (max-width: 1200px){
+    .hero-text-box {
+        width: 100%;
+        top: 60%;
+        left: 15%;
+    }
+
+    .section-welcome .welcome {
+        margin:10px auto 10px 40px;
+    }
+
+    .section-welcome .categories {
+        margin: 20px 40px 20px 10px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    h1 {
+        font-size: 300%;
+        letter-spacing: 30px;
+    }
+
+    .section-welcome .welcome {
+        margin:10px auto 10px 20px;
+    }
+
+    .section-welcome .categories {
+        margin: 20px 20px 20px 10px;
+        padding: 10px 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    h1 {
+        font-size: 200%;
+        letter-spacing: 25px;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+
+    .menu {
+        display: block;
+        padding-left: 10px;
+    }
+
+    .main-nav {
+        flex-grow: 1;
+    }
+
+    .main-nav li{
+        display: block;
+        font-size: 80%;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: none;
+    }
+
+    .sticky .menu ion-icon{
+        color: #f4a464;
+    }
+
+    .section-welcome{
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+    
+    .section-welcome .welcome {
+        flex-wrap: wrap;
+        flex: 0 1 100%;
+    }
+    
+    .section-welcome .side-bar {
+        width: 250px;
+        padding: 5px;
+    }
+
+    input {
+        width: 90%;
+        padding: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .logo {
+        top: -20px;
+        left: -85px;
+    }
+
+    h1 {
+        font-size: 120%;
+        letter-spacing: 15px;
+    }
+
+    h2 {
+        font-size: 150%;
+        margin-top: 5px;
+    }
+
+    .btn {
+        margin:10px 5px;
+        border: 1px solid #e0e0e0;
+        border-radius: 200px;
+        padding: 5px 15px;
+        font-size: 70%;
+    }
+
+    .section-welcome {
+        padding: 30px;
+    }
+
+    .section-welcome .welcome {
+        flex: 0 1 100%;
+        margin:10px auto;
+    }
+
+    .section-welcome .side-bar {
+        flex: 0 1 100%;
+    }
+
+    .section-welcome p {
+        margin: 10px auto 20px auto;
+    }
+
+    input {
+        width: 90%;
+        margin:10px auto;
+    }
+
+    .btn-join-us {
+        margin-left: 25%;
+        font-size: 90%;
+    }
+
+}

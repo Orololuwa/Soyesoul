@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 20px;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+}x
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*-------------------------------*/
+/*----------HEADINGS-------------*/
+/*-------------------------------*/
+
+h1 {
+    font-size: 400%;
+    font-weight: 100;
+    letter-spacing: 50px;
+    font-family: 'Nova Mono', monospace;
+}
+
+h2 {
+    font-size: 180%;
+    padding: 10px 0;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-top: 20px;
+    font-family: 'Nova Mono', monospace;
+    text-transform: lowercase;
+}
+
+h3 {
+    font-size: 150%;
+    padding: 10px 0;
+    font-family: 'Nova Mono', monospace;
+    text-transform: lowercase;
+}
+
+h2:after {
+    display: block;
+    width: 100px;
+    background-color: #f4a464;
+    content: ' ';
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+p {
+    text-transform: none;
+    line-height: 30px;
+    font-size: 90%;
+    margin-bottom: 20px;
+}
+
+
+
+/*--------------------------------*/
+/*------  Lists Styling ----------*/
+/*--------------------------------*/
+
+
+/*--------------------------------*/
+/*------Generic Links ------------*/
+/*--------------------------------*/
+a:link, a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:active, a:hover {
+    border: 1px solid transparent;
+}
+
+
+/*--------------------------------*/
+/*----------- Buttons ------------*/
+/*--------------------------------*/
+.btn {
+    display: inline-block;
+    margin:10px 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 200px;
+    padding: 10px 25px;
+}
+
+
+/*--------------------------------*/
+/*------SECTION HEADER------------*/
+/*--------------------------------*/
+header {
+    position: relative;
+    background: #f4a464;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.scene i {
+    position: absolute;
+    background: #e0e0e0;
+    border-radius: 50%;
+    animation: animate linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: translateY(0);
+    }
+    10%,90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}
+
+.soye-soul {
+    margin: 15px auto;
+    padding: 10px auto;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 2px 2px #575757ad;
+}
+
+
+/**************************************/
+/******** MOBILE NAV
+/**************************************/
+
+.menu {
+    display: none;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 10px 10px;
+}
+
+.menu a{
+    display: flex;
+    align-items: center;
+}
+
+.menu ion-icon{
+    font-size: 150%;
+}
+
+.menu span {
+    font-size: 80%;
+}
+
+
+
+/*--------------------------------*/
+/*------    MAIN NAV  ------------*/
+/*--------------------------------*/
+
+.logo{
+    display: none;
+    height: 50px;
+    width: auto;  
+    transform: scale(0.25);
+    top: -15px;
+    left: -25px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.main-nav{
+    margin: 5px 25px;
+    z-index: 2147483647;
+}
+
+.main-nav li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px; 
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {letter-spacing: 2px;}
+
+.main-nav li a:active,
+.main-nav li a:hover {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffffff;  
+}
+
+
+/*********************/
+/****** Sticky Nav
+/*********************/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fffffff5;
+    box-shadow: 0 2px 2px #f4a5643f;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    color: #f4a464;
+}
+
+.sticky .main-nav li a:active,
+.sticky .main-nav li a:hover {
+    border-bottom: 1px solid #f4a464;  
+}
+
+/*--------------------------------*/
+/*-----    SECTION WELCOME  ------*/
+/*--------------------------------*/
+
+.section-welcome {
+    display: flex;
+    color: #575757;
+    padding: 50px;
+}
+
+.section-welcome .welcome {
+    flex: 0 1 60%;
+    margin:10px auto 10px 50px;
+}
+
+.section-welcome .side-bar {
+    width: 350px;
+    padding: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ffffff;
+}
+
+*:focus {outline: none;}
+
+.join-us {font-size: 70%; width: 300px;}
+
+.btn-join-us {
+    background-color:#f4a464;
+    font-size: 80%;
+}
+
+.section-welcome .categories {
+    background-color:#f4a56434;
+    padding: 10px 20px;
+    margin: 20px 50px 20px 10px;
+    border-radius: 10px;
+}
+
+.section-welcome .categories h3 {
+    text-align: center;
+}
+
+.section-welcome .categories ul {
+    display: flex;
+    flex-direction: column;
+}
+.section-welcome .categories li {
+    display: block;
+    list-style: none;
+    margin: 10px 10px; 
+    border-top: 1px solid #5757575d;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+
+.section-welcome .categories li a:link,
+.section-welcome .categories li a:visited{
+    color: #575757;
+    font-size: 60%;
+}
+
+.section-welcome .categories li a:hover,
+.section-welcome .categories li a:active{
+    color: #575757dc;
+}
+
+/*--------------------------------*/
+/*-------------FOOTER-------------*/
+/*--------------------------------*/
+
+.footer {
+    background-color: #f4a464;
+    height: 50px;
+}
+
+.social-links {
+    text-align: center;
+}
+.social-links li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+}
+
